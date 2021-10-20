@@ -1,0 +1,101 @@
+body{
+    background-color: #959595;
+}
+
+.form {
+	border: 1px solid chartreuse;
+	border-radius: .5rem;
+	margin: 50px auto;
+	width: 400px;
+    padding: .5rem .75rem;
+    column-gap: .5rem;
+}
+.form-label {
+	display: flex;
+	margin-bottom: 1.25em;
+	position: relative;
+    line-height: 1.5;
+}
+.form input{
+    background-color: var(--container-color);
+    width: 50%;
+    color: chartreuse;
+    border-bottom: 1px solid chartreuse!important;
+}
+
+
+.js-validate-error-label {
+	position: absolute;
+	right: .3em;
+	top: 100%;
+}
+
+.form-label span {
+	flex-grow: 1;
+	display: inline-block;
+   
+}
+
+.form-label input:not([type="file"]) {
+	border: none;
+	border-bottom: 1px solid #000;
+	border-radius: 0;
+}
+
+.form-label input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+
+.file-label span {
+	border: 1px solid chartreuse;;
+    border-radius: 10px;
+	display: inline-block;
+	padding: 5px 10px;
+	flex-grow: 0;
+	cursor: pointer;
+   
+}
+
+.form input::placeholder{
+    color: chartreuse;
+}
+
+.form:focus{
+    outline: none;   
+    box-shadow: 0px 4px 10px chartreuse;;
+}
+
+
+.form h2 {
+	text-align: center;
+	margin: 5px;
+    margin-bottom: 1.5em;
+}
+button,input{
+    border: none;
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+.button{
+    display: inline-block;
+    background-color: black;
+    color: chartreuse;
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: black;
+}
+.button__icon{
+    font-size: 1.2rem;
+}
+p{
+    color: red;
+}
